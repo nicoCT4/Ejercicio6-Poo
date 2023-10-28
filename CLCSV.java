@@ -89,7 +89,7 @@ public class CLCSV{
             // Escribe la línea de encabezados
             escritor.write("Tipo;Modelo;Marca;Estado");
             escritor.newLine();
-        
+    
             // Escribe los datos de los dispositivos electrónicos
             for (DispositivoElectronico dispositivo : dispositivos) {
                 String tipo = (dispositivo instanceof Telefono) ? "Telefono" : "Computadora";
@@ -104,7 +104,7 @@ public class CLCSV{
                 }
                 
                 String estado = dispositivo.validarEstado() ? "Encendido" : "Apagado";
-        
+    
                 String linea = tipo + ";" + modelo + ";" + marca + ";" + estado;
                 escritor.write(linea);
                 escritor.newLine();
@@ -114,7 +114,7 @@ public class CLCSV{
             System.out.println("Error al guardar el archivo CSV");
             System.out.println(e);
         }
-    }    
+    }          
     
     
 }

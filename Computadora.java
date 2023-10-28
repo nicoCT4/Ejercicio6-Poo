@@ -14,7 +14,7 @@ public class Computadora implements DispositivoElectronico {
 
     @Override
     public void encender() {
-        if (!encendido) {
+        if (encendido) {
             System.out.println("La computadora ya está encendida");
         } else {
             encendido = true;

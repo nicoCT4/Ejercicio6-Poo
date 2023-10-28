@@ -47,7 +47,6 @@ public class Driver{
                     } else {
                         System.out.println("Posición inválida. Por favor, seleccione una posición válida.");
                     }
-                    csv.GuardarCSV("ElectroTech.csv");
                     break;              
                 case 4:
                     // Mostrar la lista de dispositivos disponibles
@@ -64,9 +63,11 @@ public class Driver{
                     } else {
                         System.out.println("Posición inválida. Por favor, seleccione una posición válida.");
                     }
-                    csv.GuardarCSV("ElectroTech.csv");
                     break;
                 case 5:
+                    csv.GuardarCSV("ElectroTech.csv");
+                    break;
+                case 6:
                     go = false;
                     break;
                 default:
@@ -82,7 +83,8 @@ public class Driver{
         System.out.println("2. Desplegar los dispositivos encendidos y apagados");
         System.out.println("3. Encender dispositivo");
         System.out.println("4. Apagar dispositivo");
-        System.out.println("5. Salir");
+        System.out.println("5. Guardar cambios");
+        System.out.println("6. Salir");
         System.out.println("Ingrese su opcion: ");
     }
 
